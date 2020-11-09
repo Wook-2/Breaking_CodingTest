@@ -45,43 +45,46 @@ Big-O표기법에는 몇가지 특징이 있다.<br>
 ##### O(1) :
 아래의 함수의 경우 입력값으로 n을 받았지만 n과 상관없이 한번의 반복문을 출력한다.<br>
 이렇게 n값에 상관없이 상수값 만큼의 시간복잡도를 가지는 경우 O(1)의 시간복잡도를 가진다.
-
-    def main(n):
-	    print("hello world")
+```python
+def main(n):
+	print("hello world")
+```
 ##### O(n)
 입력값으로 n을 받았고 print() 함수가 n번 실행된다. <br>
 이 경우 O(n)의 시간복잡도를 가진다.
-
-    def loop(n):
-	    for i in range(n):
-		    print(i)
+```python
+def loop(n):
+	for i in range(n):
+		print(i)
+```
 ##### O(n^2)
 입력값으로는 n을 받았지만 print()함수는 n^2번 호출된다.<br>
 이런 경우 O(n^2)의 시간복잡도를 가진다.
-
-    def 99dan(n):
-	    for i in range(n):
-		    for j in range(n):
-			    print(i,"x",j,"=", i*j)
+```python
+def 99dan(n):
+	for i in range(n):
+		for j in range(n):
+			print(i,"x",j,"=", i*j)
+```
 ##### O(nlogn)
 아래는 퀵정렬 코드이다. 퀵정렬은 길이가 n인 배열을 정렬하는데에 nlogn만큼의 시간복잡도를 가진다. <br>
 이렇게 n개의 입력이 들어왔을 때 nlogn만큼의 시간이 걸리는 알고리즘의 경우 O(nlogn)의 시간복잡도를 가진다고 표기하면 된다.
 ```python
-    def quick_sort(arr):
-	    small = []
-	    big = []
-	    v = []
-	    if len(arr) <= 1:
-		    return arr
-		pivot = arr[len(arr)//2]
-		for i in arr:
-			if i < pivot:
-				small.append(i)
-			elif i > pivot:
-				big.append(i)
-			else:
-				v.append(i)
-		return quick_sort(small) + v + quick_sort(big)
+def quick_sort(arr):
+	small = []
+	big = []
+	v = []
+	if len(arr) <= 1:
+		return arr
+	pivot = arr[len(arr)//2]
+	for i in arr:
+		if i < pivot:
+			small.append(i)
+		elif i > pivot:
+			big.append(i)
+		else:
+			v.append(i)
+	return quick_sort(small) + v + quick_sort(big)
 ```			
    
    <br>
