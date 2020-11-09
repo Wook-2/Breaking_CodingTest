@@ -66,7 +66,7 @@ Big-O표기법에는 몇가지 특징이 있다.<br>
 ##### O(nlogn)
 아래는 퀵정렬 코드이다. 퀵정렬은 길이가 n인 배열을 정렬하는데에 nlogn만큼의 시간복잡도를 가진다. <br>
 이렇게 n개의 입력이 들어왔을 때 nlogn만큼의 시간이 걸리는 알고리즘의 경우 O(nlogn)의 시간복잡도를 가진다고 표기하면 된다.
-
+```python
     def quick_sort(arr):
 	    small = []
 	    big = []
@@ -82,7 +82,7 @@ Big-O표기법에는 몇가지 특징이 있다.<br>
 			else:
 				v.append(i)
 		return quick_sort(small) + v + quick_sort(big)
-				
+```			
    
    <br>
    각 시간복잡도의 성능은 아래의 표를 통해 눈으로 확인할 수 있다.
