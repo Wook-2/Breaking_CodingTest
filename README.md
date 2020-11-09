@@ -2,7 +2,7 @@
 
 ### `` Language : Python ``
 
-- ### Algorithm Complexity
+- ### [Algorithm Complexity](https://github.com/Wook-2/Breaking_CodingTest/blob/main/Complexity.md)
 	- #### Big-O Complexity
 	- #### ..
 - ### Sorting
