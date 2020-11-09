@@ -1,11 +1,15 @@
 # 코테 벼락치기
-### Language : Python
+
+### `` Language : Python ``
+
 - ### Algorithm Complexity
+	- #### Big-O Complexity
+	- #### ..
 - ### Sorting
 	- #### Quick Sort
 	- #### Merge Sort
 - ###  Hash Tables
-	- #### Know how they work & When to use
+	- #### How they work & When to use
 - ### Trees
 	- #### Binary/N-ary/Trie Trees
 	- #### Red & Black Trees
@@ -15,6 +19,13 @@
 	- #### BFS & DFS
 	- #### Daijkstra & A* algorithms
 - ### Data Structure
-	- #### 
+	- #### Stack, Queue
+	- #### Heap
+	- #### NP Complete Problem
+		- ##### Traveling salesman, Knapsack problems
+		- ##### What np-complete means
 - ### Mathematics
+	- #### Basics of Probability and Statistics
 - ### OS
+	- #### Process & Threads & Concurrency ...
+	- #### How context-switching works
