@@ -5,10 +5,10 @@
 - ### [Algorithm Complexity](https://github.com/Wook-2/Breaking_CodingTest/blob/main/Complexity.md)
 	- #### Big-O Complexity
 	- #### ..
-- ### Sorting
+- ### [Sorting](https://github.com/Wook-2/Breaking_CodingTest/blob/main/Sorting.md)
 	- #### Quick Sort
 	- #### Merge Sort
-- ###  Hash Tables
+- ###  [Hash Tables](https://github.com/Wook-2/Breaking_CodingTest/blob/main/Hash_table.md)
 	- #### How they work & When to use
 - ### Trees
 	- #### Binary/N-ary/Trie Trees
