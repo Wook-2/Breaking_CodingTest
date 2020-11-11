@@ -1,6 +1,4 @@
-# 코테 벼락치기
-
-### `` Language : Python ``
+# ToStudy List
 
 - ### [Algorithm Complexity](https://github.com/Wook-2/Breaking_CodingTest/blob/main/Complexity.md)
 	- #### Big-O Complexity
