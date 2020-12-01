@@ -30,9 +30,67 @@
 - 포화 이진트리
 : 트리의 깊이에 해당하는 층에 모든 노드가 채워져있는 이진트리를 말한다.
 
+
 #### Trie Tree
+##### Trie tree
+: Trie(트라이)는 문자열 탐색에 특화된 트리구조이다. 여기서 Trie는 컴퓨터에서 검색을 의미하는 re**TRIE**val에서 따온 것이라고 한다.<br><br>
+트라이의 전체적인 구조는 아래 그림과 같다.<br>
+(그림1. 트라이 구조)
+- 하나의 노드당 하나의 알파벳이 저장되어있다.
+- 모든 글자마다 시작하는 알파벳이 다르기 때문에 루트노드는 비워놓는다.
+- 각 노드는 key 값을 알파벳, value값을 노드로 갖는 (파이썬에서)딕셔너리와, 해당노드의 알파벳으로 문자가 완성되는지를 나타내주는 boolean 변수로 이루어진다. 그림으로 설명하면 아래 그림과 같다고 보면된다.
+(그림2. 딕셔너리와 불린값을 갖는 트라이 구조)
+- 문자열의 길이가 m일때 O(m)의 시간복잡도를 가진다.
+
+##### 코드 구현
+###### 노드 자료구조
+```python
+class Node(object):
+	def __init__(self, key):
+		self.children = dict()
+		self.isComplete = false
+```
+###### 트라이 자료구조 & 연산
+```python
+class Trie(object):
+	def __init__(self):
+		self.head = Node(None)
+	
+	def insert(self, val):
+		pass
+	
+	def search(self, val):
+		pass
+	
+	def prefix(self, val):
+		pass
+```
 
 #### Red & Black Tree
+##### Red Black tree
+: 레드블랙트리는 대표적인 균형 이진 탐색트리의 한 종류이다. 모든 노드가 흑, 또는 적색이어서 레드블랙트리라고 불린다. <br>
+레드블랙트리는 아래와 같은 특성들을 가진다.<br>
+각 연산에 대한 시간복잡도는 아래와 같다.<br>
+- 탐색연산: O(logn)
+- 삽입연산: O(logn)
+- 삭제연산: O(logn)
+
+##### 특징
+- 모든 노드는 Red 또는 Black이다.
+- 루트, 리프노드는 모두 Black이다.
+- 노드가 Red이면 그 자식노드는 Black이다.
+- 한 노드에서 리프노드까지 가는 모든 경로는 같은 수의 Black 노드를 갖는다.
+
+##### 그 외 특이점
+1. 모든 노드는 두개의 색깔을 나타낼 수 있는 1비트의 저장공간이 필요하다.
+2. `루트로부터 가장 먼 리프노드의 깊이` <= 2 * `루트에서 가장 가까운 리프노드의 깊이`
+	- 최단: All black nodes
+	- 최장: red-black 반복
+
+##### 코드구현
+```python
+print("hello world zz")
+```
 
 #### Splay & AVL Tree
 
