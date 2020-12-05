@@ -2,7 +2,7 @@
 
 ### 사전 지식
 1. 완전 이진 트리
-    - 루트부터 노드가 채워져있으면서 같은 레벨에서는 왼쪽에서 오른쪽으로 노드가 채워져있는 이진트리를 완전이진트리(complete binary tree)라고 한다.
+    - 루트부터 노드가 채워져있으면서 같은 레벨에서는 왼쪽에서 오른쪽으로 노드가 채워져있는 이진트리를 완전이진트리(complete binary tree)라고 한다.<br>
 <img src = "https://github.com/Wook-2/CS_Summary/blob/main/image/%EC%99%84%EC%A0%84%EC%9D%B4%EC%A7%84%ED%8A%B8%EB%A6%AC.PNG?raw=true" alt = "완전이진트리" width ="350px"></img>
 2. 우선순위 큐
     - 우선순위 큐는 '우선순위'를 가진 데이터를 저장하는 큐를 의미한다. 
@@ -27,7 +27,8 @@
         - 왼쪽 자식 index = 2 * (부모 index) + 1
         - 오른쪽 자식 index = 2* (부모 index) + 2
         - 부모 index = (자식 index) / 2
-<img src = "https://github.com/Wook-2/CS_Summary/blob/main/image/heap.PNG?raw=true" alt ="heap" width = "350px"></img>
+
+	<br><img src = "https://github.com/Wook-2/CS_Summary/blob/main/image/heap.PNG?raw=true" alt ="heap" width = "350px"></img>
 
 ### 코드 구현
 
@@ -52,7 +53,7 @@
 
     - heapq의 default 자료구조는 최소힙.
     - 시간 복잡도: **O(logN)**
-    - 최솟값은 항상 맨앞 heap_list[0]에 위치하나 인덱스 순으로 작은 값이 저장되어있지는 않음.
+    - 최솟값은 항상 맨앞 heap_list[0]에 위치하나 인덱스 순으로 작은 값이 저장되어있지는 않음.<br>
     ***ex) 2번째로 작은값이 heap_list[1]에 위치하지 않을 수 있음!***
 - **Pop & Top**
     - **Pop**
