@@ -111,6 +111,47 @@ class Trie(object):
 print("hello world zz")
 ```
 
-#### Splay & AVL Tree
+#### Splay Tree
+##### Splay tree
+: 스플레이트리는 이진탐색트리의 일종으로 레드블랙트리와 거의 같은 성능을 가지지만 구현이 더 쉬운 트리이다.
 
+##### 특징
+- 대부분의 경우 O(logN), 아주 가끔 O(N)의 시간복잡도를 가져 amortized O(logN)의 시간복잡도를 가진다.
+- AVL tree와 다르게 balanced하지않아 더 빠르다.
+- 최근에 접근한 요소에 빠르게 접근이 가능하여 캐시와 같은 곳에서 자주 쓰인다.
+
+##### 연산
+- `Rotation`
+	<그림1. 로테이션연산>
+	: 로테이션 연산은 특정 노드를 그 노드의 부모노드위치로 옮기는 연산이다.
+- `Splay`
+	<그림2. 스플레이 연산>
+	: 트리에서 원하는 값을 찾게되면 해당노드가 루트노드가 되도록 로테이션 연산을 반복해주는데 이를 스플레이 연산이라고한다.
+	(AVL, 레드블랙트리는 balanced를 유지하기위해 Rotation을 하지만 스플레이트리는 그렇지않다.)
+- Zig-Zag, Zig-Zig Situation
+: 특정노드가 Splaying될 때, rotation되는 방향에 따라 지그재그연산, 지그지그연산으로 나눌 수 있는데, 같은방향으로 로테이션 되었다면 Zig-Zig Sotuation, 다른방향으로 로테이션 되었다면 Zig-Zag Situation이라고 부른다.
+<그림3. 지그재그 - 지그지그>
+
+##### 코드구현
+##### 자료구조
+```python
+class Node(object):
+	def __init__(self, key):
+		self.val = key
+		self.left = Node()
+		self.right = Node()
+```
+
+##### Rotate / Splay 연산
+```python
+
+def rotate():
+	return
+
+def splay():
+	return
+
+```
+
+#### AVL Tree
 #### BFS & DFS
