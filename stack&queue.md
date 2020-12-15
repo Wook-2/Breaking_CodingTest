@@ -9,7 +9,7 @@
 데이터의 출입구가 하나인 자료구조.
 아래그림과 같은 통처럼 생긴 자료구조라고 생각하면 쉬울것같다.
 
-![stack 자료구조](../../assets/img/stack.PNG){: height="250px"}
+![stack 자료구조](https://github.com/j1mmyson/j1mmyson.github.io/blob/master/assets/img/stack.PNG?raw=true){: height="250px"}
 
 출입구가 하나이므로 `1. 가장 먼저 넣은 데이터가 가장 아래에 쌓이게 되고` `2. 가장 위에 있는 데이터만 꺼낼 수 있다.`
 위의 1, 2번의 특성을 **LIFO(Last In First Out)** 혹은 **선입후출** 이라고 부른다.<br>
@@ -140,7 +140,7 @@ data = stack.pop() # data = 3 / stack = [1, 2]
 **위 아래가 뚫려있는 원통**을 생각하면 쉽다.<br>
 여기서 가장 먼저들어온(출구에 가까운) 데이터의 위치를 **front**라 칭하고 가장 나중에 들어온 데이터의 위치를 **rear**라 칭한다.
 
-![queue 자료구조](../../assets/img/queue.PNG){: height="250px"}
+![queue 자료구조](https://github.com/j1mmyson/j1mmyson.github.io/blob/master/assets/img/queue.PNG?raw=true){: height="250px"}
 
 출입구가 하나씩 존재하고 통로가 하나이므로 먼저들어간 데이터가 먼저 나올 수 밖에없다.<br>
 이러한 특성을 **선입선출**, **FIFO(First In First Out)**이라 한다.<br>
